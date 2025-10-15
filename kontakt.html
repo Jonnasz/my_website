@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Twoja Firma 3D - Projektowanie i Druk 3D Trójmiasto</title> <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="hero-small">
+            <div class="container">
+                <h1>Skontaktuj się z Nami!</h1>
+                <p>Jesteśmy gotowi odpowiedzieć na Twoje pytania i pomóc w realizacji projektów.</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <h2>Dane Kontaktowe</h2>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Adres:</strong> Trójmiasto, Polska (dokładny adres po wcześniejszym umówieniu)</p> <p><i class="fas fa-envelope"></i> <strong>E-mail:</strong> <a href="mailto:twoj.email@example.com">druk3d.gdansk.pl@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <strong>Telefon:</strong> <a href="tel:+48123456789">+48 123 456 789</a></p>
+                    <p>Zapraszamy do kontaktu w godzinach <strong>[np. 9:00 - 17:00, od poniedziałku do piątku]</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <h2>Wyślij Zapytanie</h2>
+                <p class="form-description">Wypełnij poniższy formularz, a my skontaktujemy się z Tobą najszybciej, jak to możliwe.</p>
+
+                <form action="http://localhost:5000/send-email" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Imię i Nazwisko:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adres E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numer Telefonu (opcjonalnie):</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Temat (np. Druk FDM, Projekt CAD, Wycena):</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Wiadomość / Opis projektu:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Wyślij Zapytanie</button>
+                </form>
+
+                
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/load-shared.js"></script>
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT_CODE.js" crossorigin="anonymous"></script>
+</body>
+</html>
